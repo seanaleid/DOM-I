@@ -81,9 +81,24 @@ navi[3].textContent = "Features";
 navi[4].textContent = "About";
 navi[5].textContent = "Contact";
 
+
 let h1 = document.getElementsByTagName('h1');
 // console.log(h1);
 h1[0].textContent = 'DOM IS AWESOME';
+
+
+//prepend not working, have to figure out other way to select and add 'DOM IS AWESOME' on different lines
+// let ctaText = document.querySelector('cta-text');
+// let hMid = document.createElement('h1');
+// hMid.textContent = 'IS';
+// let hBottom = document.createElement('h1');
+// hBottom.textContent = 'AWESOME';
+// console.log(h1Mid);
+// console.log(h1Bottom);
+// console.log(ctaText);
+// ctaText.prepend(hMid);
+// h1.prepend(h1Bottom);
+
 
 //make sure to use .textContent
 
@@ -156,3 +171,17 @@ navBar.appendChild(secondItem);
 // navBarColor.style.color = 'green';
 //only changes 'Home' because it is the first one, not sure why querySelectorAll breaks
 
+// let green = document.getElementsByTag('p');
+// green.style.fontSize = 'green';
+//another test didn't work...fontColor doesn't either, but color does for p and h1s
+
+let navColor = document.querySelectorAll('header nav a');
+console.log(navColor);
+navColor[0].style.color = 'green';
+navColor[1].style.color = 'green';
+navColor[2].style.color = 'green';
+navColor[3].style.color = 'green';
+navColor[4].style.color = 'green';
+navColor[5].style.color = 'green';
+navColor[6].style.color = 'green';
+navColor[7].style.color = 'green';
