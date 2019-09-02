@@ -119,16 +119,40 @@ p[8].textContent = 'Copyright Great Idea! 2018';
 // console.log(p);
 
 let address = document.querySelector('section.contact');
-console.log(address);
+// console.log(address);
 let pLast = document.createElement('p');
 pLast.textContent = 'sales@greatidea.io';
 address.appendChild(pLast);
 
-// let address = document.querySelector('section.contact p');
-// console.log(address);
+//DON'T FORGET TO USE .textContent when adding text to the live page
 
-// let navColor = document.querySelectorAll('a');
+// let navColor = document.querySelectorAll('header');
+// console.log(navColor);
 // navColor.style.color = 'green';
 
+// navi.style.color = 'green';
+//doesn't work...maybe because it's an array
 
+// let test = document.querySelector('div.cta-text');
+// console.log(test);
+// test.style.color = 'green';
+//test works...I am not selecting the correct path to change the nav color
+//stretch?
+
+let navBar = document.querySelector('nav');
+let firstItem = document.createElement('a');
+firstItem.textContent = 'Home';
+let secondItem = document.createElement('a');
+secondItem.textContent = 'Team';
+// secondItem.style.color = "green";
+// console.log(firstItem);
+// console.log(secondItem);
+//no quotes around console logged new element
+navBar.prepend(firstItem);
+navBar.appendChild(secondItem);
+// navBar.style.color = 'green';
+
+// let navBarColor = document.querySelector('a');
+// navBarColor.style.color = 'green';
+//only changes 'Home' because it is the first one, not sure why querySelectorAll breaks
 
