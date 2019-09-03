@@ -82,9 +82,16 @@ navi[4].textContent = "About";
 navi[5].textContent = "Contact";
 
 
-let h1 = document.getElementsByTagName('h1');
+const headerText = document.querySelector('.cta-text h1').innerHTML = 'DOM <br> IS <br> AWESOME';
 // console.log(h1);
-h1[0].textContent = 'DOM IS AWESOME';
+// headerText.textContent = 'DOM \n IS \n AWESOME';
+// headerText.style.width = '40%';
+// headerText.style.height = '100%';
+// headerText.style.flex = 'auto';
+// headerText.style.alignItems = 'center';
+// headerText.style.alignContent = 'end';
+// headerText.style.alignSelf = 'center';
+// headerText.style.marginRight = '5%';
 
 
 //prepend not working, have to figure out other way to select and add 'DOM IS AWESOME' on different lines
